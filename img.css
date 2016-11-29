@@ -1,0 +1,14 @@
+* {
+  margin: 0;
+}
+.container {
+  position: absolute;
+}
+.student {
+  display: inline-block;
+  position: relative;
+  left: 50%;
+}
+.student, img {
+  width: 70%;
+}
