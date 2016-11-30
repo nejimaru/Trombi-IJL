@@ -11,7 +11,10 @@
   width: 50%;
 }
 .blank_cv {
-  
+  height: 150px;
+  width: 150px;
+  background-color: pink;
+  z-index: 1;
 }
 .one:hover {
     opacity: 0.4;
@@ -19,6 +22,6 @@
     transition-duration: 5s;
 }
 .two:focus {
-    transition: 3s;
-
+    opacity: 0.4;
+    transition-duration: 4s;
 }
