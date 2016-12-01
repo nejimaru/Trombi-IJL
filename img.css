@@ -9,13 +9,17 @@ a * {
   text-decoration: none;
 }
 div {
-
+  width: 25%;
+  height: 25%;
 }
 .student_1 {
   background-image: url("http://simplonmars.eu/img/promo/2016/363401.jpg");
+  background-size: cover;
 }
 .student_2 {
   background-image: url("http://simplonmars.eu/img/promo/2016/98257.jpg");
+  background-size: cover;
+
 }
 .student_1:hover {
     opacity: 0.4;
