@@ -5,23 +5,20 @@
   display: flex;
   flex-direction: row;
 }
+a * {
+  text-decoration: none;
+}
+div {
 
-.student, .one, .two {
-  box-sizing: border-box;
-  width: 50%;
 }
-.blank_cv {
-  height: 150px;
-  width: 150px;
-  background-color: pink;
-  z-index: 1;
+.student_1 {
+  background-image: url("http://simplonmars.eu/img/promo/2016/363401.jpg");
 }
-.one:hover {
+.student_2 {
+  background-image: url("http://simplonmars.eu/img/promo/2016/98257.jpg");
+}
+.student_1:hover {
     opacity: 0.4;
     transition: scale(0.3);
     transition-duration: 5s;
-}
-.two:focus {
-    opacity: 0.4;
-    transition-duration: 4s;
 }
