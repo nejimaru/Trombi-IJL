@@ -19,6 +19,9 @@
 h1 {
   text-align: center;
 }
+li {
+  list-style: none;
+}
 .social {
   justify-content: center;
   background-color: aqua;
@@ -26,21 +29,21 @@ h1 {
 .twitter {
   width: 64px;
   height: 64px;
-  background-image: url("twitter.png");
+  background-image: url("simplonstrap/twitter_blue.png");
 }
 .twitter:hover {
-  background-image: url("twitterh.png");
+  background-image: url("simplonstrap/twitter_gray.png");
 }
 .viadeo {
   width: 20px;
   height: 20px;
-  background-image: url("twitter1.png");
+  background-image: url("simplonmars/viadeo.png");
 }
 .github {
   width: 64px;
   height: 64px;
-  background-image: url("git.png");
+  background-image: url("simplonstrap/github_black.png");
 }
 .github:hover{
-  background-image: url("gith.png");
+  background-image: url("simplonstrap/github_gray.png");
 }
