@@ -39,6 +39,9 @@ li {
   height: 20px;
   background-image: url("simplonmars/viadeo.png");
 }
+.viadeo:hover {
+  background-image: url("simplonmars/viadeo.png");
+}
 .github {
   width: 64px;
   height: 64px;
@@ -46,4 +49,12 @@ li {
 }
 .github:hover{
   background-image: url("simplonstrap/github_gray.png");
+}
+.linkedin {
+    width: 20px;
+    height: 20px;
+    background-image: url("simplonmars/linkedin_blue.png");
+}
+.linkedin:hover {
+  background-image: url("simplonmars/linkedin_gray.png");
 }
