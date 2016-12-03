@@ -81,19 +81,17 @@ input {
   font-weight: bolder;
   color: #fff;
 }
-/*Quand flèche passe par la div*/
-#download:hover {
+input:hover {
+  cursor: pointer;
   color: #fff;
   font-weight: bolder;
   text-decoration: none;
 }
-input:hover {
-  cursor: pointer;
-}
-input:hover {
-	transform: translate(0px,5px);
-  -webkit-transform: translate(0px,5px);
-  -moz-transform: translate(0px,5px);
-  -o-transform: translate(0px,5px);
+input:active {
+	transform: translate(0px,1px);
+  -webkit-transform: translate(0px,1px);
+  -moz-transform: translate(0px,1px);
+  -o-transform: translate(0px,1px);
 	border-bottom: 1px solid;
+  transition: all 0.35s;
 }
