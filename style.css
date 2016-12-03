@@ -35,12 +35,12 @@ li {
   background-image: url("simplonstrap/twitter_gray.png");
 }
 .viadeo {
-  width: 20px;
-  height: 20px;
-  background-image: url("simplonmars/viadeo.png");
+  width: 64px;
+  height: 64px;
+  background-image: url("simplonstrap/viadeo_orange.png");
 }
 .viadeo:hover {
-  background-image: url("simplonmars/viadeo.png");
+  background-image: url("simplonstrap/viadeo.png");
 }
 .github {
   width: 64px;
@@ -51,10 +51,10 @@ li {
   background-image: url("simplonstrap/github_gray.png");
 }
 .linkedin {
-    width: 20px;
-    height: 20px;
-    background-image: url("simplonmars/linkedin_blue.png");
+  width: 64px;
+  height: 64px;
+  background-image: url("simplonstrap/linkedin_blue.png");
 }
 .linkedin:hover {
-  background-image: url("simplonmars/linkedin_gray.png");
+  background-image: url("simplonstrap/linkedin_gray.png");
 }
