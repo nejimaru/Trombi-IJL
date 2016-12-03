@@ -34,13 +34,13 @@ li {
 .twitter:hover {
   background-image: url("simplonstrap/twitter_gray.png");
 }
-.viadeo {
+.mail {
   width: 64px;
   height: 64px;
-  background-image: url("simplonstrap/viadeo_orange.png");
+  background-image: url("simplonstrap/mail_black.png");
 }
-.viadeo:hover {
-  background-image: url("simplonstrap/viadeo.png");
+.mail:hover {
+  background-image: url("simplonstrap/mail_white.png");
 }
 .github {
   width: 64px;
@@ -57,4 +57,43 @@ li {
 }
 .linkedin:hover {
   background-image: url("simplonstrap/linkedin_gray.png");
+}
+.viadeo {
+  width: 64px;
+  height: 64px;
+  background-image: url("simplonstrap/viadeo_orange.png");
+}
+.viadeo:hover {
+  background-image: url("simplonstrap/viadeo.png");
+}
+.final_step {
+  background-color: white;
+}
+input {
+  /*contour*/
+  padding: 30px;
+	background-color: #3498DB;
+	border-bottom: 5px solid #2980B9;
+  border-radius: 10px;
+	text-shadow: 0px -2px #2980B9;
+  /*police*/
+  text-transform: uppercase;
+  font-weight: bolder;
+  color: #fff;
+}
+/*Quand flèche passe par la div*/
+#download:hover {
+  color: #fff;
+  font-weight: bolder;
+  text-decoration: none;
+}
+input:hover {
+  cursor: pointer;
+}
+input:hover {
+	transform: translate(0px,5px);
+  -webkit-transform: translate(0px,5px);
+  -moz-transform: translate(0px,5px);
+  -o-transform: translate(0px,5px);
+	border-bottom: 1px solid;
 }
