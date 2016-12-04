@@ -1,0 +1,1290 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="fonts/fontello/css/fontello.css">
+    <link rel="stylesheet" href="simplonstrap.css" title="no title">
+    <link rel="stylesheet" href="style.css" title="no title">
+    <title>SimplonStrap </title>
+</head>
+
+<body>
+    <header>
+        <h1> SimplonStrap </h1>
+        <h2> The Best CSS Framework Forever and ever</h2>
+        <!-- Add Navigation Bar-->
+        <nav class="nav" role="navigation">
+            <label for="show-menu" class="show-menu">Menu ￬</label>
+            <input type="checkbox" id="show-menu" role="button">
+            <ul>
+                <li><a href="#">Accueil</a></li>
+                <li><a href="#download">Téléchargement</a></li>
+                <li><a href="#menu">Navigation</a></li>
+                <li>
+                    <a href="#">Grilles ￬</a>
+                    <ul class="hid_ul">
+                        <li><a href="#flexgrid">Grille Flex</a></li>
+                        <li><a href="#noflexgrid">Grille sans Flex</a></li>
+                    </ul>
+                </li>
+                <li><a href="#form">Formulaire</a></li>
+                <li><a href="#tableau">Tableau</a></li>
+                <li><a href="#buttons">Boutons</a></li>
+                <li><a href="#reset">Reset</a></li>
+                <li><a href="#helper">Helper Class</a></li>
+                <li><a href="#icons">Icones</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <label for="show-menu" class="show-menu">Fermer ↑</label>
+                <input type="checkbox" id="show-menu" role="button">
+            </ul>
+        </nav>
+        <div class="clearnav"></div>
+    </header>
+    <main>
+        <section id="download" class="centert">
+            <h3> Téléchargement du Framework SimplonStrap </h3>
+            <p>
+              Pour télécharger le Framework, cliquez sur le bouton ci-dessous.
+            </p><br>
+            <a class="btn" id="btndowload"  href="simplonstrap.css" download="simplonstrap.css">Download SimplonStrap.css</a>
+            <br><br><br>
+        </section>
+        <section id="menu">
+            <h3> La Barre de Navigation </h3>
+            <nav class="nav" role="navigation">
+                <label for="show-menu" class="show-menu">Menu ￬</label>
+                <input type="checkbox" id="show-menu" role="button">
+                <ul>
+                    <li><a href="#">Accueil</a></li>
+                    <li><a href="#download">Téléchargement</a></li>
+                    <li><a href="#menu">Navigation</a></li>
+                    <li>
+                        <a href="#">Grille ￬</a>
+                        <ul class="hid_ul">
+                            <li><a href="#flexgrid">Grille Flex</a></li>
+                            <li><a href="#noflexgrid">Grille sans Flex</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#form">Formulaire</a></li>
+                    <li><a href="#tableau">Tableau</a></li>
+                    <li><a href="#buttons">Boutons</a></li>
+                    <li><a href="#reset">Reset</a></li>
+                    <li><a href="#helper">Helper Class</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <label for="show-menu" class="show-menu">Fermer ↑</label>
+                    <input type="checkbox" id="show-menu" role="button">
+                </ul>
+            </nav>
+            <div class="clearnav"></div>
+            <h5 class="centert">Sa construction </h5><br/>
+            <p>Un container doté de la classe .nav pour l'adaptation à n'importe quel type de menu et non uniquement une barre de navigation <br/> On initialise ensuite une liste à puce avec la balise ul comprenant les divers éléments du menu <br/> On crée
+                ensuite les différents liens du menu entre les balises li de la liste à puce <br/> Pour intégrer un sous-menu, utilisez la classe "hid_ul" sur l'ul du sous-menu.
+                <h5 class="centert">Le responsive</h5><br/>
+                <p>L'adaptabilité du menu est geré par des media queries à definir en fonction de votre design personel<br/> - Sur Desktop : <br/>Les éléments de la liste sont en flex 1.
+                    <br/> - Sur Mobile : <br>L'affichage est en block sur un click de "Menu", les sous-menus sont affichés mais avec un font-size inférieur et des bordures afin de bien les distinguer <br/>
+                </p>
+
+                <div class="containflex">
+                    <!--Nom de la class a voir avec Julien -->
+                    <div class="colnorm">
+                        <!--Nom de la class a voir avec Julien -->
+                        <h4> Le Html </h4>
+                        <code>
+&ltnav class="nav" role="navigation"&gt
+    &ltul&gt
+        &ltli&gt&lta href="#">Accueil&lt/a&gt&lt/li&gt
+        &ltli&gt&lta href="#menu">Navigation&lt/a&gt&lt/li&gt
+        &ltli&gt
+            &lta href="#">Grilles ￬&lt/a&gt
+            &ltul class="hid_ul"&gt
+                &ltli&gt&lta href="#"&gtOne&lt/a>&lt/li&gt
+                &ltli&gt&lta href="#"&gtTwo&lt/a>&lt/li&gt
+                &ltli&gt&lta href="#"&gtThree&lt/a>&lt/li&gt
+            &lt/ul&gt
+        &lt/li&gt
+        &ltli&gt&lta href="#form">Formulaire&lt/a&gt&lt/li&gt
+        &ltli&gt&lta href="#tableau">Tableau&lt/a&gt&lt/li&gt
+        &ltli&gt&lta href="#buttons">Boutons&lt/a&gt&lt/li&gt
+        &ltli&gt&lta href="#reset">Reset&lt/a&gt&lt/li&gt
+        &ltli&gt&lta href="#helper">Helper Class&lt/a&gt&lt/li&gt
+        &ltli&gt&lta href="#contact">Contact&lt/a&gt&lt/li&gt
+        &ltlabel for="show-menu" class="show-menu"&gtFermer ↑&lt/label&gt
+        &ltinput type="checkbox" id="show-menu" role="button"&gt
+    &lt/ul&gt
+&lt/nav&gt
+&ltdiv class="clearnav"&gt&lt/div&gt
+            </code>
+                    </div>
+                    <div class="colnorm">
+                        <!--Nom de la class a voir avec Julien -->
+                        <h4> Le Css </h4>
+                        <code>
+/* Navigation Bar*/
+.nav {
+    width: 100%;
+}
+.nav>ul {
+    list-style-type: none;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+.nav>ul li {
+    flex: 1;
+}
+.nav li a  {
+    height: 50px;
+    line-height: 50px;
+    color: #fff;
+    background-color: #2f3036;
+    display: flex;
+    justify-content: center;
+}
+.nav li:hover a, .nav li:hover {
+    background-color: #aaaaaa;
+    color: black;
+    transition: 0.2s;
+}
+/*Liens Toggle*/
+.nav li:hover ul a {
+    background-color: #aaaaaa;
+    color: #2f3036;
+    height: 50px;
+    line-height: 50px;
+}
+/*Hover liens Toggle*/
+.nav li:hover ul a:hover {
+    background-color: #e2575e;
+    transition: 0.1s;
+}
+/*Cache liens Toggle*/
+.nav li ul {
+    display: none;
+}
+/*Permet affichage liens Toggle*/
+.nav>ul li:hover .hid_ul, .hid_ul:hover,.nav>ul li:hover {
+    display: block;
+    padding: 0;
+}
+
+.nav input[type=checkbox], .show-menu {
+    display: none;
+}
+.show-menu {
+    color: #fff;
+    background-color: #2f3036;
+    text-align: center;
+    padding: 10px 0;
+}
+.nav input[type=checkbox]:checked~ul:first-of-type {
+    display: block;
+}
+
+@media screen and (max-width: 800px) {
+/* Navigation Bar Media Queries*/
+
+    .nav ul li, .nav li a {
+        width: 100%;
+    }
+    .show-menu {
+        display: block;
+    }
+    .nav>ul {
+        display: none;
+    }
+}
+            </code>
+                    </div>
+                </div>
+        </section>
+        <hr></hr>
+        <section id="flexgrid">
+            <h3> La Grille Flex </h3>
+            <!-- Add Grid -->
+
+            <p>
+                La grille permet de placer et de dimensionner facilement ses divs et ses colonnes. "containflex" permet d'initialiser la grille. La taille de la grille prend celle de la div sur laquelle elle est initialisée. "colnorm" crée une colonne qui adapte sa taille
+                aux nombres de colonnes placées dans le "containflex". "colnorm" donne donc la même taille à toutes les divs. Vous pouvez aussi choisir des tailles : petit, moyen ou grand avec "coltiny", "colmedium" et "colbig". Vous disposez aussi de
+                colonne "flex" qui permette de mettre des colonnes dans des colonnes car elles font office de container.
+            </p>
+            <div style="border: 1px solid black;" class="containflex h600p">
+
+                <div style="background-color: pink; padding: 16px;" class="colflexnorm">
+
+                    <div style="background-color: grey; margin: 6px;" class="coltiny">
+
+                    </div>
+                    <div style="background-color: grey; margin: 6px;" class="colmedium">
+
+                    </div>
+                    <div style="background-color: grey; margin: 6px;" class="colbig">
+                    </div>
+                </div>
+                <div style="background-color: grey;" class="colnorm">
+                </div>
+            </div>
+            <div class="containflex">
+                <!--Nom de la class a voir avec Julien -->
+                <div class="colnorm">
+                    <!--Nom de la class a voir avec Julien -->
+                    <h4> Le Html </h4>
+                    <code>
+
+&ltdiv style="border: 1px solid black;" class="containflex h600p"&gt
+
+    &ltdiv style="background-color: red; padding: 16px;" class="colflexnorm"&gt
+
+        &ltdiv style="background-color: blue; margin: 6px;" class="coltiny"&gt
+
+        &lt/div&gt
+        &ltdiv style="background-color: blue; margin: 6px;" class="colmedium"&gt
+
+        &lt/div&gt
+        &ltdiv style="background-color: blue; margin: 6px;" class="colbig"&gt
+
+        &lt/div&gt
+
+    &lt/div&gt
+    &ltdiv style="background-color: blue;" class="colnorm"&gt
+
+    &lt/div&gt
+&lt/div&gt
+
+            </code>
+                </div>
+                <div class="colnorm">
+                    <!--Nom de la class a voir avec Julien -->
+                    <h4> Le Css </h4>
+                    <code>
+/* -----------------------------------------------Grid */
+
+.containflex {
+  display: flex;
+  box-sizing: border-box;
+}
+
+.colnorm {
+  flex: 1;
+  box-sizing: border-box;
+}
+
+.coltiny {
+  flex: 0.5;
+  box-sizing: border-box;
+}
+
+.colmedium {
+  flex: 2;
+  box-sizing: border-box;
+}
+
+.colbig {
+  flex: 4;
+  box-sizing: border-box;
+}
+
+.colflexnorm {
+  display: flex;
+  flex: 1;
+  box-sizing: border-box;
+}
+
+.colflextiny {
+  display: flex;
+  flex: 0.5;
+  box-sizing: border-box;
+  }
+
+.colflexmedium {
+  display: flex;
+  flex: 2;
+  box-sizing: border-box;
+}
+
+.colflexbig {
+  display: flex;
+  flex: 4;
+  box-sizing: border-box;
+}
+
+            </code>
+                </div>
+            </div>
+        </section>
+        <section id="noflexgrid">
+            <h3> La Grille sans Flex </h3>
+            <!-- Add Grid -->
+
+            <p>Pour les amateurs de BootStrap et les vétérans d'Internet Explorer, nous avons également implémenté une grille de base 12 colonnes, n'utilisant aucun flex.<br>
+                classe du container: "grid"<br>
+                Fonctionnement des dimensions des colonnes: w-<i>dividende-diviseur</i>, allant de 1 à 12<br>
+                Exemples :</p>
+            <ul class="gridlist">
+              <li>une colonne de taille un douzième: "w-1-12" = "one-twelve"</li>
+              <li>une colonne de taille un tier: "w-1-3" = "w-4-12" = "four-twelve"</li>
+              <li>une colonne faisant la moitié de la taille de son parent: "w-1-2" = "w-2-4" = "w-3-6" = "w-6-12" = "six-twelve"</li>
+            </ul><br>
+            <p>Pour créer vos propres grilles, je vous propose d'utiliser la fraction la plus simplifiée de leurs noms de classe. Par exemple, si vous souhaitez y mettre deux colonnes - disons un tier et deux tiers - vous pourriez leur ajouter les classes "w-1-3" et "w-2-3"; par contre, si vous souhaitez ajouter une colonne dont le diviseur est 12, mon conseil est d'utiliser uniquement les classes de largeur de colonnes terminant par 12 ("w-1-12", "w-2-12", ..., "w-12-12")</p>
+            <div style="border: 2px solid black;" class="grid h600p">
+
+                <div style="background-color: pink; padding: 16px;" class="w-1-2">
+                    <div style="background-color: grey; border: 2px solid pink;" class="w-1-12">1/12</div>
+                    <div style="background-color: grey; border: 2px solid pink;" class="w-7-12">7/12</div>
+                    <div style="background-color: grey; border: 2px solid pink;" class="w-4-12">4/12</div>
+                </div>
+
+                <div style="background-color: grey; padding: 16px;" class="w-1-2">
+                  <div style="background-color: firebrick; border: 2px solid white;" class="w-1-3">1/3</div>
+                  <div style="background-color: firebrick; border: 2px solid white;" class="w-2-3">2/3</div>
+                </div>
+
+            </div>
+            <div class="grid">
+                <div class="w-1-2">
+                    <h4> Le Html </h4>
+
+                    <code>
+
+                      &ltdiv style="border: 2px solid black;" class="grid h600p"&gt
+
+                          &ltdiv style="background-color: pink; padding: 16px;" class="w-1-2"&gt
+                              &ltdiv style="background-color: grey; border: 2px solid pink;" class="w-1-12"&gt1/12&lt/div&gt
+                              &ltdiv style="background-color: grey; border: 2px solid pink;" class="w-7-12"&gt7/12&lt/div&gt
+                              &ltdiv style="background-color: grey; border: 2px solid pink;" class="w-4-12"&gt4/12&lt/div&gt
+                          &lt/div&gt
+
+                          &ltdiv style="background-color: grey; padding: 16px;" class="w-1-2"&gt
+                            &ltdiv style="background-color: firebrick; border: 2px solid white;" class="w-1-3"&gt1/3&lt/div&gt
+                            &ltdiv style="background-color: firebrick; border: 2px solid white;" class="w-2-3"&gt2/3&lt/div&gt
+                          &lt/div&gt
+
+                      &lt/div&gt
+
+                  </code>
+                </div>
+                <div class="w-1-2">
+                    <!--Nom de la class a voir avec Julien -->
+                    <h4> Le Css </h4>
+                    <code>
+                      /* -----------------------------------------------Grid */
+
+                      /*------ Dans SimplonStrap */
+
+                      .grid, .borderbox{
+                          -webkit-box-sizing: border-box;
+                          -moz-box-sizing: border-box;
+                          box-sizing: border-box;
+                      }
+
+                      /* Grid Display*/
+
+                      .grid {
+                          display: block;
+                          clear: both;
+                      }
+
+                      .grid *{
+                        -webkit-box-sizing: border-box;
+                        -moz-box-sizing: border-box;
+                        box-sizing: border-box;
+                      }
+
+                      /* Grid Widths */
+                      /*--1/12--*/
+                      .grid .one-twelve, .grid .w-1-12 {
+                          width: calc(100%/12);
+                          float: left;
+                          padding: 10px;
+                      }
+                      /*--2/12--*/
+                      .grid .two-twelve, .grid .w-1-6, .grid .w-2-12 {
+                          width: calc(100%/6);
+                          float: left;
+                          padding: 10px;
+                      }
+                      /*--3/12--*/
+                      .grid .three-twelve, .grid .w-1-4, .grid .w-3-12 {
+                          width: calc(100%/4);
+                          float: left;
+                          padding: 10px;
+                      }
+                      /*--4/12--*/
+                      .grid .four-twelve, .grid .w-1-3,.grid .w-2-6, .grid .w-4-12 {
+                          width: calc(100%/3);
+                          float: left;
+                          padding: 10px;
+                      }
+                      /*--5/12--*/
+                      .grid .five-twelve, .grid .w-5-12 {
+                          width: calc(500%/12);
+                          float: left;
+                          padding: 10px;
+                      }
+                      /*--6/12--*/
+                      .grid .six-twelve, .grid .w-1-2, .grid .w-2-4, .grid .w-3-6, .grid .w-6-12{
+                          width: 50%;
+                          float: left;
+                          padding: 10px;
+                      }
+                      /*--7/12--*/
+                      .grid .seven-twelve, .grid .w-7-12 {
+                          width: calc(700%/12);
+                          float: left;
+                          padding: 10px;
+                      }
+                      /*--8/12--*/
+                      .grid .eight-twelve, .grid .w-2-3,.grid .w-4-6, .grid .w-8-12 {
+                          width: calc(200%/3);
+                          float: left;
+                          padding: 10px;
+                      }
+                      /*--9/12--*/
+                      .grid .nine-twelve, .grid .w-3-4, .grid .w-9-12 {
+                          width: 75%;
+                          float: left;
+                          padding-right: 10px;
+                          padding-bottom: 10px;
+                      }
+                      /*--10/12--*/
+                      .grid .ten-twelve, .grid .w-5-6, .grid .w-10-12 {
+                          width: calc(500%/6);
+                          float: left;
+                          padding: 10px;
+                      }
+                      /*--11/12--*/
+                      .grid .onze-twelve, .grid .w-11-12 {
+                          width: calc(1100%/12);
+                          float: left;
+                          padding: 10px;
+                      }
+                      /*--12/12--*/
+                      .grid .twelve-twelve, .grid .w-12-12, .grid .w-1{
+                          width: 100%;
+                          float: left;
+                          padding: 10px;
+                      }
+
+                      /**Grid Media Query**/
+                      @media all (max-width:768px){
+                        .grid [class*="w-"] {
+                          width:100%;
+                        }
+                      }
+
+                      /*------ Dans le style.css utilisé pour cette doc*/
+
+                      .grid [class*="w-"]{
+                        height: 100%;
+                        color: white;
+                        font-size: 0.9em;
+                      }
+                      .grid [class*="w-"] div{
+                        text-align: center;
+                      }
+            </code>
+                </div>
+            </div>
+        </section>
+    </main>
+    <hr></hr>
+    <aside role="complementary">
+        <section id="form">
+            <h3> Le Formulaire </h3>
+            <!-- Add Form -->
+            <p> Voici donc le formulaire, très simple et modulable à souhait. Vous remarquerez le design flat afin d'améliorer la lisibilité. <br><br> Pour obtenir ce formulaire pré-formaté, il suffit d'attribuer la classe "form" à votre formulaire. <br><br>                La balise form n'a pas de bordure mais un border radius afin d'alléger le design, un léger box-shadow a été ajouté afin de bien le distinguer dans le DOM. <br><br> Les Fieldset ont une bordure grise toute simple, un text-align:center est
+                appliqué afin de centrer son contenu.<br><br> Les legend sont en italique avec un text-align: left.<br><br> Les label sont en inline-block afin de pouvoir utiliser un text-align:left tout en leur attribuant une width.<br> Vous remarquerez
+                qu'ils sont également en bold afin d'améliorer leur lisibilité.<br><br> Les imput ont un padding de 5px, toujours pour améliorer la lisibilité. Leur width est fixée à 40% du parent. <br> Vous noterez que les input de type radio et checkbox
+                ont une width:auto afin d'etre au plus près de leurs labels respectifs.<br><br> Une transition de 0.5s a été ajoutée sur le focus des input, toujours afin de rentre le visuel plus agréable.<br> Les balises textarea sont quant à elles d'une
+                width de 40% afin d'etre en accord avec les input. <br><br> La balise select à été egalement remodelée très légèrement avec une width de 40% (toujours pour la même raison) et un border de la même couleur que les input. <br><br> Enfin concernant
+                le button, la bordure a été enlevée, un background-color vert ajouté, une petite box shadow appliquée de manière très légère et la couleur du texte changé en blanc.<br> Lorsque ce bouton est activé, un box shadow en inset est appliqué
+                afin de donner un effet de bouton qui "s'enfonce". <br>
+
+            </p>
+            <form class="form" action="index.html" method="post">
+                <fieldset>
+                    <legend>Informations personnelles</legend>
+
+                    <label for="sexe">Votre Titre</label>
+                    <select id="sexe" name="sexe">
+                      <option value="option">Monsieur</option>
+                      <option value="option">Madame</option>
+                      <option value="option">Seigneur</option>
+                      <option value="option">Lord</option>
+                    </select>
+
+                    <div>
+                        <label for="prenom">Prénom </label>
+                        <input type="text" name="firstname" id="prenom">
+                    </div>
+                    <div>
+                        <label for="nom">Nom </label>
+                        <input type="text" name="name" id="nom">
+                    </div>
+                    <div>
+                        <label for="adress1">Adresse 1 </label>
+                        <input type="text" name="adresse1" id="adress1">
+                    </div>
+                    <div>
+                        <label for="adress2">Adresse 2 </label>
+                        <input type="text" name="adresse2" id="adress2">
+                    </div>
+                    <div>
+                        <label for="postal">Code postal </label>
+                        <input type="text" name="postal" id="postal" maxlength="5">
+                    </div>
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="email" name="mail" id="mail" placeholder="ex:john.doe@mail.com">
+                    </div>
+                    <div>
+                        <label for="tel">Téléphone </label>
+                        <input type="tel" name="tel" id="tel" maxlength="10">
+                    </div>
+                    <div>
+                        <label for="date">Date de naissance</label>
+                        <input type="date" name="date" id="date">
+                    </div>
+                    <div>
+                        <label for="url">Skyblog </label>
+                        <input type="url" name="name" id="url" placeholder="http://tocard.skyrock.com/">
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Comment avez-vous connu ce site?</legend>
+                    <p class="question">Comment avez-vous connu ce site?</p>
+                    <div>
+                        <input type="radio" name="radio" id="internet" value="Internet">
+                        <label for="internet">Internet</label>
+                        <input type="radio" name="radio" id="journal" value="Journal papier">
+                        <label for="journal">Journal Papier</label>
+                        <input type="radio" name="radio" id="bouche" value="Bouche">
+                        <label for="bouche">Bouche à oreille</label>
+                    </div>
+                    <p class="question">De quel instrument jouez vous?</p>
+                    <div>
+                        <input type="checkbox" name="basse" id="checkbox" value="basse">
+                        <label for="basse">Slappa da bass!</label>
+                        <input type="checkbox" name="guitare" id="guitare" value="guitare">
+                        <label for="guitare">Tocard de grateux!</label>
+                        <input type="checkbox" name="batterie" id="batterie" value="batterie">
+                        <label for="batterie">Poum tchak!</label>
+                    </div>
+                    <p class="question">Commentaires supplémentaires</p>
+                    <textarea name="name" rows="8" cols="40"></textarea>
+                </fieldset>
+                <button type="submit">Envoyer</button>
+            </form>
+            <div class="containflex">
+                <!--Nom de la class a voir avec Julien -->
+                <div class="colnorm">
+                    <!--Nom de la class a voir avec Julien -->
+                    <h4> Le Html </h4>
+                    <code>
+&ltform class="form" action="index.html" method="post"&gt
+  &ltfieldset&gt
+      &ltlegend&gtInformations personnelles&lt/legend&gt
+
+      &ltlabel for="sexe"&gtVotre Titre&lt/label&gt
+      &ltselect id="sexe" name="sexe"&gt
+            &ltoption value="option"&gtMonsieur&lt/option&gt
+            &ltoption value="option"&gtMadame&lt/option&gt
+            &ltoption value="option"&gtSeigneur&lt/option&gt
+            &ltoption value="option"&gtLord&lt/option&gt
+          &lt/select&gt
+
+      &ltdiv&gt
+          &ltlabel for="prenom"&gtPrénom &lt/label&gt
+          &ltinput type="text" name="firstname" id="prenom"&gt
+      &lt/div&gt
+      &ltdiv&gt
+          &ltlabel for="nom"&gtNom &lt/label&gt
+          &ltinput type="text" name="name" id="nom"&gt
+      &lt/div&gt
+      &ltdiv&gt
+          &ltlabel for="adress1"&gtAdresse 1 &lt/label&gt
+          &ltinput type="text" name="adresse1" id="adress1"&gt
+      &lt/div&gt
+      &ltdiv&gt
+          &ltlabel for="adress2"&gtAdresse 2 &lt/label&gt
+          &ltinput type="text" name="adresse2" id="adress2"&gt
+      &lt/div&gt
+      &ltdiv&gt
+          &ltlabel for="postal"&gtCode postal &lt/label&gt
+          &ltinput type="text" name="postal" id="postal" maxlength="5"&gt
+      &lt/div&gt
+      &ltdiv&gt
+          &ltlabel for="email"&gtEmail&lt/label&gt
+          &ltinput type="email" name="mail" id="mail" placeholder="ex:john.doe@mail.com"&gt
+      &lt/div&gt
+      &ltdiv&gt
+          &ltlabel for="tel">Téléphone &lt/label&gt
+          &ltinput type="tel" name="tel" id="tel" maxlength="10"&gt
+      &lt/div&gt
+      &ltdiv&gt
+          &ltlabel for="date">Date de naissance&lt/label&gt
+          &ltinput type="date" name="date" id="date"&gt
+      &lt/div&gt
+      &ltdiv&gt
+          &ltlabel for="url">Skyblog &lt/label&gt
+          &ltinput type="url" name="name" id="url" placeholder="http://tocard.skyrock.com/"&gt
+      &lt/div&gt
+  &lt/fieldset&gt
+
+  &ltfieldset&gt
+      &ltlegend&gtComment avez-vous connu ce site?&lt/legend&gt
+      &ltp class="question"&gtComment avez-vous connu ce site?&lt/p&gt
+      &ltdiv&gt
+          &ltinput type="radio" name="radio" id="internet" value="Internet"&gt
+          &ltlabel for="internet"&gtInternet&lt/label&gt
+          &ltinput type="radio" name="radio" id="journal" value="Journal papier"&gt
+          &ltlabel for="journal"&gtJournal Papier&lt/label&gt
+          &ltinput type="radio" name="radio" id="bouche" value="Bouche"&gt
+          &ltlabel for="bouche"&gtBouche à oreille&lt/label&gt
+      &lt/div&gt
+      &ltp class="question"&gtDe quel instrument jouez vous?&lt/p&gt
+      &ltdiv&gt
+          &ltinput type="checkbox" name="basse" id="checkbox" value="basse"&gt
+          &ltlabel for="basse"&gtSlappa da bass!&lt/label&gt
+          &ltinput type="checkbox" name="guitare" id="guitare" value="guitare"&gt
+          &ltlabel for="guitare"&gtTocard de grateux!&lt/label&gt
+          &ltinput type="checkbox" name="batterie" id="batterie" value="batterie"&gt
+          &ltlabel for="batterie"&gtPoum tchak!&lt/label&gt
+      &lt/div&gt
+      &ltp class="question"&gtCommentaires supplémentaires&lt/p&gt
+      &lttextarea name="name" rows="8" cols="40"&gt&lt/textarea&gt
+  &lt/fieldset&gt
+  &ltbutton type="submit"&gtEnvoyer&lt/button&gt
+&lt/form&gt
+            </code>
+                </div>
+                <div class="colnorm">
+                    <!--Nom de la class a voir avec Julien -->
+                    <h4> Le Css </h4>
+                    <code>
+.form {
+    margin: 5px 10%;
+    padding: 2%;
+    border-radius: 10px;
+    background-color: #EEEEEE;
+    font-family: serif;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, .2);
+}
+
+.form label {
+    display: inline-block;
+    min-width: 25%;
+    text-align: left;
+    font-weight: bold;
+}
+
+.form fieldset {
+    margin: 10px;
+    border-radius: 10px;
+    background-color: #EEEEEE;
+    border: 1px solid #DDDDDD;
+    text-align: center;
+    padding: 5%;
+}
+
+.form legend {
+    font-style: italic;
+    text-align: left;
+}
+
+.form input {
+    border-radius: 3px;
+    margin: 1% 0px;
+    width: 40%;
+    padding: 5px;
+    border: 1px solid #CCCCCC;
+}
+
+.form input[type="radio"], input[type="checkbox"] {
+    width: auto;
+    margin: 5px 5px;
+}
+
+.form input:focus {
+    transition: 0.5s;
+}
+
+.form textarea {
+    width: 40%;
+    height: 10vh;
+    margin: 5px;
+}
+
+.form select {
+    border: 1px solid #CCCCCC;
+    padding: 5px;
+    width: 40%;
+}
+
+.form button {
+    padding: 8px 0px;
+    width: 100px;
+    border: 1px solid #CCCCCC;
+    border-radius: 5px;
+    background-color: #8FE583;
+    cursor: pointer;
+}
+
+.form .question {
+    text-align: left;
+    margin-top: 20px;
+}
+                  </code>
+                </div>
+            </div>
+        </section>
+        <hr></hr>
+        <section id="tableau">
+            <h3> Le Tableau </h3>
+            <p>
+                Ajoutez simplement la classe "table" a votre balise table, les effet sont décrit dans le tableau d'exemple suivant.<br>
+                <br>
+                Nous avons donc sur "table" un background gris très clair, un border-collapse en separate afin de séparer les cellules,<br>
+                Un box-shadow tout autour très léger afin de démarquer le tableau de la page, un margin auto afin de le centrer.<br>
+                Cette fois-ci le text-align est à gauche et la largeur total du tableau représente 80% de son conteneur (ici la page).<br>
+                <br>
+                Passons maintenant au head du tableau, nous avons un background linear-gradient anthracite et une police blanche en bold <br>
+                Un padding est appliqué a toutes les cellules afin d'améliorer la lisibilité, il est de 10px en haut et en bas et de 15px de chaque coté <br>
+
+                les cellules en td du body possèdent un border d'1px solid blanc.<br>
+                <br>
+                Enfin, le td:first-child de chaque ligne est en bold.
+            </p>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Attribut</th>
+                        <th>Valeur</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>.table[margin]</td>
+                        <td>auto</td>
+                        <td>Centre le tableau</td>
+                    </tr>
+                    <tr>
+                        <td>.table[background]</td>
+                        <td>#EEEEEE</td>
+                        <td>Couleur grise de background</td>
+                    </tr>
+                    <tr>
+                        <td>.table[border-collapse]</td>
+                        <td>separate</td>
+                        <td>Sépare les borders afin d'améliorer la lisibilité</td>
+                    </tr>
+                    <tr>
+                        <td>.table[font-size]</td>
+                        <td>0.9em</td>
+                        <td>Diminue un peu la taille du texte</td>
+                    </tr>
+                    <tr>
+                        <td>.table[width]</td>
+                        <td>80%</td>
+                        <td>Définie la largeur à 80%</td>
+                    </tr>
+                    <tr>
+                        <td>.table[text-align]</td>
+                        <td>left</td>
+                        <td>Aligne le texte à gauche</td>
+                    </tr>
+                    <tr>
+                        <td>.table[box-shadow]</td>
+                        <td>0 0 10px 0 rgba(0, 0, 0, .3)</td>
+                        <td>Applique une ombre très légère tout autour du tableau</td>
+                    </tr>
+                    <tr>
+                        <td>th[font-weight]</td>
+                        <td>bold</td>
+                        <td>Met la police des cellules du head du tableau en gras</td>
+                    </tr>
+                    <tr>
+                        <td>th[padding]</td>
+                        <td>10px 15px</td>
+                        <td>Padding améliorant la lisibilité</td>
+                    </tr>
+                    <tr>
+                        <td>th[color]</td>
+                        <td>#fff</td>
+                        <td>Couleur de police blanche</td>
+                    </tr>
+                    <tr>
+                        <td>th[background]</td>
+                        <td>linear-gradient(#777, #444)</td>
+                        <td>Background en dégradé</td>
+                    </tr>
+                    <tr>
+                        <td>td[border]</td>
+                        <td>1px solid #fff</td>
+                        <td>Bordure blanche</td>
+                    </tr>
+                    <tr>
+                        <td>tbody tr td:first-child[font-weight]</td>
+                        <td>bold</td>
+                        <td>Met en gras la première cellule de chaque ligne</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="containflex">
+                <div class="colnorm">
+                    <!--Nom de la class a voir avec Julien -->
+                    <h4> Le HTML </h4>
+                    <code>
+&lttable class="table"&gt
+  &ltthead&gt
+    &lttr&gt
+      &ltth&gtAttribut&lt/th&gt
+      &ltth&gtValeur&lt/th&gt
+      &ltth&gtDescription&lt/th&gt
+    &lt/tr&gt
+  &lt/thead&gt
+  &lttbody&gt
+    &lttr&gt
+      &lttd&gt.table[margin]&lt/td&gt
+      &lttd&gtauto&lt/td&gt
+      &lttd&gtCentre le tableau&lt/td&gt
+    &lt/tr&gt
+    &lttr&gt
+      &lttd&gt.table[background]&lt/td&gt
+      &lttd&gt#EEEEEE&lt/td&gt
+      &lttd&gtCouleur grise de background&lt/td&gt
+    &lt/tr&gt
+    &lttr&gt
+      &lttd&gt.table[border-collapse]&lt/td&gt
+      &lttd&gtseparate&lt/td&gt
+      &lttd&gtSépare les borders afin d'améliorer la lisibilité&lt/td&gt
+    &lt/tr&gt
+    &lttr&gt
+      &lttd&gt.table[font-size]&lt/td&gt
+      &lttd&gt0.9em&lt/td&gt
+      &lttd&gtDiminue un peu la taille du texte&lt/td&gt
+    &lt/tr&gt
+    &lttr&gt
+      &lttd&gt.table[width]&lt/td&gt
+      &lttd&gt80%&lt/td&gt
+      &lttd&gtDéfinie la largeur à 80%&lt/td&gt
+    &lt/tr&gt
+    &lttr&gt
+      &lttd&gt.table[text-align]&lt/td&gt
+      &lttd&gtleft&lt/td&gt
+      &lttd&gtAligne le texte à gauche&lt/td&gt
+    &lt/tr&gt
+    &lttr&gt
+      &lttd&gt.table[box-shadow]&lt/td&gt
+      &lttd&gt0 0 10px 0 rgba(0, 0, 0, .3)&lt/td&gt
+      &lttd&gtApplique une ombre très légère tout autour du tableau&lt/td&gt
+    &lt/tr&gt
+    &lttr&gt
+      &lttd&gtth[font-weight]&lt/td&gt
+      &lttd&gtbold&lt/td&gt
+      &lttd&gtMet la police des cellules du head du tableau en gras&lt/td&gt
+    &lt/tr&gt
+    &lttr&gt
+      &lttd&gtth[padding]&lt/td&gt
+      &lttd&gt10px 15px&lt/td&gt
+      &lttd&gtPadding améliorant la lisibilité&lt/td&gt
+    &lt/tr&gt
+    &lttr&gt
+      &lttd&gtth[color]&lt/td&gt
+      &lttd&gt#fff&lt/td&gt
+      &lttd&gtCouleur de police blanche&lt/td&gt
+    &lt/tr&gt
+    &lttr&gt
+      &lttd&gtth[background]&lt/td&gt
+      &lttd&gtlinear-gradient(#777, #444)&lt/td&gt
+      &lttd&gtBackground en dégradé&lt/td&gt
+    &lt/tr&gt
+    &lttr&gt
+      &lttd&gttd[border]&lt/td&gt
+      &lttd&gt1px solid #fff&lt/td&gt
+      &lttd&gtBordure blanche&lt/td&gt
+    &lt/tr&gt
+    &lttr&gt
+      &lttd>tbody tr td:first-child[font-weight]&lt/td&gt
+      &lttd&gtbold&lt/td&gt
+      &lttd&gtMet en gras la première cellule de chaque ligne&lt/td&gt
+    &lt/tr&gt
+  &lt/tbody&gt
+&lt/table&gt
+                    </code>
+                </div>
+                <div class="colnorm">
+                    <!--Nom de la class a voir avec Julien -->
+                    <h4> Le Css </h4>
+                    <code>
+.table {
+	background: #EEEEEE;
+	border-collapse: separate;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, .2);
+	font-size: 0.9em;
+	margin: auto;
+	text-align: left;
+	width: 80%;
+}
+
+.table th {
+	background: linear-gradient(#777, #444);
+	color: #fff;
+  font-weight: bold;
+	padding: 10px 15px;
+}
+
+.table td {
+	border: 1px solid #fff;
+	padding: 10px 15px;
+}
+
+.table tbody tr td:first-child {
+  font-weight: bold;
+}
+
+                    </code>
+                </div>
+            </div>
+        </section>
+        <hr></hr>
+        <section id="buttons">
+            <h3> Les Boutons </h3>
+            <!-- Add Buttons -->
+            <p> Ci-dessous vous trouverez les boutons: <br><br> Un bouton neutre, attribuez la class .btn, avec un border gris, un background en radial-gradient gris très léger, une width de 100px, un padding vertical de 8px afin d'ameliorer la lisibilité,
+                un cursor: pointer,<br> une suppression de l'outline lors d'un focus et enfin un shadow inset afin de donner une impression "d'enfoncer" le bouton quand il est activé.<br><br> Ajoutez la classe "vld" afin de changer la couleur de background
+                en vert.<br><br> Ajoutez la classe "anl" afin de changer la couleur de background en rouge. <br><br>
+            </p>
+            <div class="containbtn">
+                <button class="btn" type="button" name="button">Cliquez ici</button>
+                <button class="btn vld" type="button" name="button">Valider</button>
+                <button class="btn anl" type="button" name="button">Annuler</button>
+            </div>
+            <div class="containflex">
+                <div class="colnorm">
+                    <h4> Le HTML</h4>
+                    <code>
+&ltbutton class="btn" type="button" name="button"&gtCliquez ici&lt/button&gt
+&ltbutton class="btn vld" type="button" name="button"&gtValider&lt/button&gt
+&ltbutton class="btn anl" type="button" name="button"&gtAnnuler&lt/button&gt
+                    </code>
+                </div>
+                <div class="colnorm">
+                    <h4> Le Css </h4>
+
+                    <code type="css">
+.btn {
+    padding: 8px 0px;
+    width: 100px;
+    border: 1px solid #CCCCCC;
+    border-radius: 5px;
+    background-color: #EEEEEE;
+    cursor: pointer;
+}
+
+.btn.vld {
+    background-color: #8FE583;
+}
+
+.btn.anl {
+    background-color: #e2575e;
+}
+
+.btn:active {
+    box-shadow: inset 1px 1px 5px grey;
+}
+
+.btn:focus {
+    outline: none;
+}
+                  </code>
+                </div>
+            </div>
+        </section>
+        <hr></hr>
+        <section id="reset">
+            <h3> Le Reset User Agent </h3>
+            <!-- Add Reset User Agent -->
+            <p> Le Reset User Agent permet de réinitialiser les paramètres d'affichage par défaut du navigateur que l'on ne souhaite pas conserver dans notre code </p>
+            <div class="containflex">
+                <!--Nom de la class a voir avec Julien -->
+                <div class="colnorm">
+                    <!--Nom de la class a voir avec Julien -->
+                    <h4> Le Css </h4>
+                    <code>
+/* -----------------------------------------------Reset User Agent */
+/*To remove any margin or border, reset font size & font style, reset the vertical alignment to its default value*/
+html, body, div, span, applet,
+p, blockquote,
+a, big, cite, code,
+em, img,
+small, strike, strong, tt,
+b, u, i,
+ol, ul, li,
+form, label, legend,
+table,
+article, aside, canvas,
+figure, figcaption, footer, header,
+menu, nav, output, section {
+  margin: 0;
+  padding: 0;
+  border: 0;
+	font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+            </code>
+                </div>
+                <div class="colnorm">
+                    <!--Nom de la class a voir avec Julien -->
+                    <h4> Le Css </h4>
+                    <code>
+/* hyphens & too long words go to next line */
+div, textarea, table, td, th, code, pre, samp {
+  word-wrap: break-word;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  -o-hyphens: auto;
+  hyphens: auto;
+}
+/*To remove bullets from bulleted lists*/
+ul, li {
+	list-style: none;
+}
+/*To remove underlining or any other effect on links*/
+a, a:target, a:visited, a:active {
+  text-decoration: none;
+  color: black;
+}
+
+img {
+  max-width: 100%;
+}
+            </code>
+                </div>
+            </div>
+        </section>
+        <hr></hr>
+        <section id="helper">
+            <h3> Les Helper Class </h3>
+            <!-- Add Helper Class -->
+            <p> Les Helper Class sont des classes qui permettent d'accellerer votre vitesse de production.
+                <br>Nous en avons construit plusieurs types : Position, Display, Cacher un élément, etc etc </p>
+            <div class="containflex">
+                <!--Nom de la class a voir avec Julien -->
+                <div class="colnorm">
+                    <!--Nom de la class a voir avec Julien -->
+                    <h4> Les Positions et Display </h4>
+                    <code>
+/*** Positions ***/
+
+.porel {
+  position: relative;
+}
+
+.poabs {
+  position: absolute;
+}
+
+.pofix {
+  position: fixed;
+}
+
+.postat {
+  position: static;
+}
+
+/*** Display ***/
+
+.dblock {
+  display: block;
+}
+
+.dinblock {
+  display: inline-block;
+}
+
+.dflex {
+  display: flex;
+}
+
+.dflexcenter {
+  display: flex;
+  justify-content: center;
+}
+
+/*** Float ***/
+.floatr {
+  float: right;
+}
+
+.floatl {
+  float: left;
+}
+
+.floatn {
+  float: none;
+}
+
+.floatfix {
+  clear: both;
+}
+            </code>
+                </div>
+                <div class="colnorm">
+                    <!--Nom de la class a voir avec Julien -->
+                    <h4> Propriété de Flex  </h4>
+                    <code>
+/*** Flex properties ***/
+.dflex {
+  display:flex;
+}
+
+.dflexcenter {
+  display:flex;
+  justify-content:center;
+}
+
+.dflexsp-b {
+  display:flex;
+  justify-content:space-between;
+}
+
+.dflex-a {
+  display:flex;
+  justify-content:space-around;
+}
+.dflex-w {
+  flex-wrap: wrap;
+}
+
+            </code>
+                </div>
+                <div class="colnorm">
+                    <!--Nom de la class a voir avec Julien -->
+                    <h4> Cacher un élément  </h4>
+                    <code>
+/*** Hide Elements ***/
+.dnone { /* full Hide elements */
+  display: none;
+}
+
+.visuallyhidden { /* elements still visible by DOM but not by User*/
+  position: absolute;
+  top:-999px; left:-9999px;
+}
+
+.visibhidden { /* hide content but space location still visible*/
+  visibility: hidden;
+}
+
+/*** Overflow ***/
+.overhidden {
+  overflow: hidden;
+}
+				</code>
+                </div>
+                <div class="colnorm">
+                    <!--Nom de la class a voir avec Julien -->
+                    <h4> Centrer un élément  </h4>
+                    <code>
+/*** Center elements ***/
+.centerm {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.centert {
+  text-align:center;
+}
+				</code>
+                </div>
+                <div class="colnorm">
+                    <!--Nom de la class a voir avec Julien -->
+                    <h4> Divers  </h4>
+                    <code>
+/*** Border Radius ***/
+.border-radius {
+  border-radius:0.4em;
+}
+
+/*** Defaults Colors & background ***/
+.color {
+  color: blue;
+}
+
+.bg {
+  background: #dedede;
+}
+            </code>
+                </div>
+            </div>
+        </section>
+        <section id="icons">
+          <h3> Les Icones </h3>
+          <p> Le Framework dispose d'une petite librairie d'icones que
+            vous pouvez utiliser pour votre Navigation, vos reseaux
+            sociaux, etc.</p>
+          <h5 class="centert">Integrer la librairie</h5><br/>
+          <p> - Une fois le framework télécharger, dézipper le.<br/>
+          - ajouter le dossier fontello dans votre projet web <br>
+        - linker la feuille de style fontello.css avec l'url suivante: fontello/css/fontello.css
+      sur toutes les pages necessitant des icones <br>
+    - </p>
+              <h5 class="centert">Utiliser la librairie d'icones</h5><br/>
+              <p>Ajouter la class de l'icone que vous souhaitez ajouter à votre élément <br/>
+                Vous pouvez gerer l'apparence de l'icone grace aux propriétés css relatives aux fonts
+                ex : font-size; font-weight; etc etc !
+                Amusez vous !
+              </p>
+          <div class="containflex">
+            <div class="colnorm">
+
+            </div>
+
+          </div>
+        </section>
+    </aside>
+    <footer class="bg">
+        <div class="containflex">
+            <div class="colnorm">
+                <!-- A voir pr le contenu -->
+                <h3>Le mot de l'équipe : </h3>
+                <p>Hodor hodor HODOR! Hodor hodor, hodor. Hodor hodor - hodor. Hodor, hodor. Hodor. Hodor, hodor - HODOR hodor, hodor hodor hodor hodor?! Hodor. Hodor hodor - hodor?! Hodor hodor HODOR! Hodor hodor; hodor hodor hodor hodor hodor! Hodor, hodor
+                    - hodor... Hodor hodor hodor - hodor. Hodor. </p>
+                <p>Hodor hodor HODOR! Hodor HODOR hodor, hodor hodor hodor?! Hodor! Hodor hodor, hodor hodor hodor?! Hodor, hodor, hodor. Hodor hodor; hodor hodor. Hodor hodor HODOR! Hodor hodor - hodor?! Hodor! Hodor hodor, hodor hodor, hodor. Hodor hodor;
+                    hodor hodor. </p>
+            </div>
+            <div class="colnorm">
+                <!-- A voir pr le contenu -->
+                <h3>ET la un petit géranium ?  </h3>
+                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                    aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+            </div>
+            <div class="colnorm">
+                <!-- A voir pr le contenu  -->
+                <h3>On reste en Contact ?  </h3>
+                <p> Une Envie ? Une Suggestion ?</p>
+                <p> Contactez nous ! </p>
+                <form class="dflexcenter">
+                    <input class="input" type:email placeholder="votre nom">
+                    <input class="input " type:email placeholder="votre email">
+                    <input class="input" type:email placeholder="votre site web">
+                </form>
+            </div>
+          </div>
+        <p> &copy 2016 Copyright Julien - Valentin - Ryhad - Elise - Laurene - Eleves de SIMPLonMars</p>
+        <a href="#" id="gotop">
+            <span class="icon-up-open" aria-hidden="true"></span>
+            <span class="visuallyhidden">Haut de Page</span>
+        </a>
+    </footer>
+</body>
+
+</html>
