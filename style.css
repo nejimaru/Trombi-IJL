@@ -58,14 +58,7 @@ li {
 .linkedin:hover {
   background-image: url("simplonstrap/linkedin_gray.png");
 }
-.viadeo {
-  width: 64px;
-  height: 64px;
-  background-image: url("simplonstrap/viadeo_orange.png");
-}
-.viadeo:hover {
-  background-image: url("simplonstrap/viadeo.png");
-}
+
 .final_step {
   background-color: white;
 }
@@ -78,7 +71,7 @@ input {
 	text-shadow: 0px -2px #2980B9;
   /*police*/
   text-transform: uppercase;
-  font-weight: bolder;
+  font-weight: bold;
   color: #fff;
 }
 input:hover {
@@ -88,10 +81,13 @@ input:hover {
   text-decoration: none;
 }
 input:active {
+  border-bottom: 2px solid #2980B9;
 	transform: translate(0px,1px);
   -webkit-transform: translate(0px,1px);
   -moz-transform: translate(0px,1px);
   -o-transform: translate(0px,1px);
-	border-bottom: 1px solid;
   transition: all 0.35s;
+  -webkit-transition: all 0.35s;
+  -moz-transition: all 0.35s;
+  -o-transition: all 0.35s;
 }
