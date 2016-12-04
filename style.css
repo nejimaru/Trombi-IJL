@@ -1,46 +1,130 @@
+.top {
+  width: 100vw;
+  height: 20vh;
+  background-color: black;
+  font-size: 600%;
+}
+.htop{
+  color: rgb(74, 175, 172);
+}
 .item {
-  border: 2px ridge blue;
+  border: 2px solid black;
   flex:none;
+  padding-top: 10px;
+  background-color: white;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+img {
+  display: block;
+  margin: auto;
+  border: 3px solid black;
+  border-radius: 10px;
 }
 .container {
+  border-radius: 10px;
   margin: auto;
+  margin-top: 50px;
   width:calc(1400px - 4px);
   justify-content: center;
-  border-left: 4px solid grey;
-  border-right: 4px solid grey;
+  border: 4px solid grey;
   justify-content: space-around;
-  padding-left: 4px;
-  padding-right: 4px;
+  background-color: rgb(74, 175, 172);
 }
-.margin {
-  margin: 10px;
-}
-
-h1 {
+h1, p {
   text-align: center;
+  margin: 0;
 }
+/* BOUTON SOCIAUX */
 .social {
   justify-content: center;
-  background-color: aqua;
+  background-color: rgb(32, 162, 92);
 }
 .twitter {
   width: 64px;
   height: 64px;
-  background-image: url("twitter.png");
+  background-image: url("images/twitter_blue.png");
 }
 .twitter:hover {
-  background-image: url("twitterh.png");
+  background-image: url("images/twitter_gray.png");
 }
-.viadeo {
-  width: 20px;
-  height: 20px;
-  background-image: url("twitter1.png");
+.mail {
+  width: 64px;
+  height: 64px;
+  background-image: url("images/mail_black.png");
+}
+.mail:hover {
+  background-image: url("images/mail_white.png");
 }
 .github {
   width: 64px;
   height: 64px;
-  background-image: url("git.png");
+  background-image: url("images/github_black.png");
 }
 .github:hover{
-  background-image: url("gith.png");
+  background-image: url("images/github_gray.png");
+}
+.linkedin {
+  width: 64px;
+  height: 64px;
+  background-image: url("images/linkedin_blue.png");
+}
+.linkedin:hover {
+  background-image: url("images/linkedin_gray.png");
+}
+
+.final_step {
+  background-color: white;
+}
+input {
+  /*contour*/
+  padding: 30px;
+	background-color: #3498DB;
+	border-bottom: 5px solid #2980B9;
+  border-radius: 10px;
+	text-shadow: 0px -2px #2980B9;
+  /*police*/
+  text-transform: uppercase;
+  font-weight: bolder;
+  color: #fff;
+}
+input:hover {
+  cursor: pointer;
+  color: #fff;
+  font-weight: bolder;
+  text-decoration: none;
+}
+input:active {
+	transform: translate(0px,1px);
+  -webkit-transform: translate(0px,1px);
+  -moz-transform: translate(0px,1px);
+  -o-transform: translate(0px,1px);
+	border-bottom: 1px solid;
+  transition: all 0.35s;
+}
+@media (max-width: 1530px) {
+  .container {
+    width:calc(1200px - 8px);
+  }
+}
+@media (max-width: 1200px) {
+  .container {
+    width:calc(1000px - 8px);
+  }
+}
+@media (max-width: 1000px) {
+  .container {
+    width:calc(800px - 8px);
+  }
+}
+@media (max-width: 900px) {
+  .container {
+    width:calc(100% - 8px);
+  }
+  .item {
+    width:calc(100% - 4px);
+  }
+  .top {
+    font-size: 200%;
+  }
 }
