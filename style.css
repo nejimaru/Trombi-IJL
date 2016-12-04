@@ -27,7 +27,7 @@
 
 .container:hover {
   width:calc(900px - 4px);
-  transition: width 3s;
+  transition: width 1s;
 
 }
 .container:hover .descr {
