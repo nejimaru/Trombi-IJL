@@ -4,13 +4,35 @@
 }
 .container {
   margin: auto;
-  width:calc(1400px - 4px);
+  width:calc(280px - 4px);
   justify-content: center;
   border-left: 4px solid grey;
   border-right: 4px solid grey;
   justify-content: space-around;
   padding-left: 4px;
   padding-right: 4px;
+  position: relative;
+}
+
+.descr {
+  width: 500px;
+  height: 200px;
+  border: 1px solid black;
+  float: right;
+  top:50px;
+  left: 310px;
+  position: absolute;
+  display: none;
+}
+
+.container:hover {
+  width:calc(900px - 4px);
+  transition: width 3s;
+
+}
+.container:hover .descr {
+  display: block;
+  
 }
 .margin {
   margin: 10px;
@@ -19,6 +41,9 @@
 h1 {
   text-align: center;
 }
+li {
+  list-style: none;
+}
 .social {
   justify-content: center;
   background-color: aqua;
@@ -26,21 +51,109 @@ h1 {
 .twitter {
   width: 64px;
   height: 64px;
-  background-image: url("twitter.png");
+  background-image: url("simplonstrap/twitter_blue.png");
 }
 .twitter:hover {
-  background-image: url("twitterh.png");
+  background-image: url("simplonstrap/twitter_gray.png");
 }
-.viadeo {
-  width: 20px;
-  height: 20px;
-  background-image: url("twitter1.png");
+.mail {
+  width: 64px;
+  height: 64px;
+  background-image: url("simplonstrap/mail_black.png");
+}
+.mail:hover {
+  background-image: url("simplonstrap/mail_white.png");
 }
 .github {
   width: 64px;
   height: 64px;
-  background-image: url("git.png");
+  background-image: url("simplonstrap/github_black.png");
 }
 .github:hover{
-  background-image: url("gith.png");
+  background-image: url("simplonstrap/github_gray.png");
+}
+.linkedin {
+  width: 64px;
+  height: 64px;
+  background-image: url("simplonstrap/linkedin_blue.png");
+}
+.linkedin:hover {
+  background-image: url("simplonstrap/linkedin_gray.png");
+}
+.viadeo {
+  width: 64px;
+  height: 64px;
+  background-image: url("simplonstrap/viadeo_orange.png");
+}
+.viadeo:hover {
+  background-image: url("simplonstrap/viadeo.png");
+}
+.final_step {
+  background-color: white;
+}
+input {
+  /*contour*/
+  padding: 30px;
+	background-color: #3498DB;
+	border-bottom: 5px solid #2980B9;
+  border-radius: 10px;
+	text-shadow: 0px -2px #2980B9;
+  /*police*/
+  text-transform: uppercase;
+  font-weight: bolder;
+  color: #fff;
+}
+input:hover {
+  cursor: pointer;
+  color: #fff;
+  font-weight: bolder;
+  text-decoration: none;
+}
+input:active {
+	transform: translate(0px,1px);
+  -webkit-transform: translate(0px,1px);
+  -moz-transform: translate(0px,1px);
+  -o-transform: translate(0px,1px);
+	border-bottom: 1px solid;
+  transition: all 0.35s;
+}
+
+.descr {
+
+    animation: fadein 10s;
+    -moz-animation: fadein 10s; /* Firefox */
+    -webkit-animation: fadein 10s; /* Safari et Chrome */
+    -o-animation: fadein 10s; /* Opera */
+}
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* sur Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* sur Safari et Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* sur Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
 }
