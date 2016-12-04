@@ -62,27 +62,36 @@ li {
 .final_step {
   background-color: white;
 }
-input {
+/*valeur par défaut*/
+.btn {
+  border-radius: 5px;
+  background-color: #EEEEEE;
+  cursor: pointer;
+}
+/*la version personnalisée*/
+.download {
   /*contour*/
+  border: 2px solid #3498DB;
   padding: 30px;
-	background-color: #3498DB;
-	border-bottom: 5px solid #2980B9;
-  border-radius: 10px;
-	text-shadow: 0px -2px #2980B9;
+  /*l'autre couleur du background*/
+  background-color: #3498DB;
+  border-bottom: 5px solid #2980B9;
   /*police*/
   text-transform: uppercase;
-  font-weight: bold;
+  text-shadow: 0px 2px #2980B9;
   color: #fff;
 }
-input:hover {
+
+.download:hover {
   cursor: pointer;
-  color: #fff;
-  font-weight: bolder;
   text-decoration: none;
 }
-input:active {
-  border-bottom: 2px solid #2980B9;
-	transform: translate(0px,1px);
+.btn:focus {
+    outline: none;
+}
+.btn:active {
+  box-shadow: inset 1px 1px 5px #2980B9;
+  transform: translate(0px,1px);
   -webkit-transform: translate(0px,1px);
   -moz-transform: translate(0px,1px);
   -o-transform: translate(0px,1px);
