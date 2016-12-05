@@ -88,6 +88,9 @@ h1, p {
 .comp {
   margin: 3px;
   justify-content: space-between;
+  color:white;
+  font-family:impact;
+  font-weight:bold;
 }
 .lang {
   border: 1px solid black;
