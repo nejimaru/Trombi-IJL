@@ -207,6 +207,15 @@ h1, p {
 }
 @media (max-width: 900px) {
   .container {
+    width:calc(700px - 8px);
+  }
+  .top {
+    font-size: 200%;
+  }
+}
+
+@media (max-width: 700px) {
+  .container {
     width:calc(100% - 8px);
   }
   .item {
