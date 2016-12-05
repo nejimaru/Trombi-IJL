@@ -66,7 +66,7 @@ h1, p {
   height: 64px;
   background-image: url("images/mail_black.png");
 }
-.trans:hover {
+social>:hover {
   transform:rotate(360deg);
   transition:5s;
 }
