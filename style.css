@@ -66,11 +66,9 @@ h1, p {
   height: 64px;
   background-image: url("images/mail_black.png");
 }
-social>:hover {
+.mail:hover {
   transform:rotate(360deg);
   transition:5s;
-}
-.mail:hover {
   background-image: url("images/mail_white.png");
 }
 .github {
@@ -79,14 +77,19 @@ social>:hover {
   background-image: url("images/github_black.png");
 }
 .github:hover{
+  transform:rotate(360deg);
+  transition:5s;
   background-image: url("images/github_gray.png");
 }
 .linkedin {
+  
   width: 64px;
   height: 64px;
   background-image: url("images/linkedin_blue.png");
 }
 .linkedin:hover {
+  transform:rotate(360deg);
+  transition:5s;
   background-image: url("images/linkedin_gray.png");
 }
 .comp {
