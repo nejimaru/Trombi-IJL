@@ -59,6 +59,8 @@ h1, p {
   background-image: url("images/twitter_blue.png");
 }
 .twitter:hover {
+  transform:rotate(360deg);
+  transition:5s;
   background-image: url("images/twitter_gray.png");
 }
 .mail {
