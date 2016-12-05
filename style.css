@@ -93,26 +93,25 @@ h1, p {
   border: 1px solid black;
   border-radius: 5px;
 }
+.lang, p {
+  color: #fff;
+  font-weight: bold;
+}
 .php {
-  background-color: #fff;
-  border: 2px solid #EB2D36;
+  background-color: rgb(235, 54, 54);
 }
 .js {
-  background-color: #fff;
-  border: 2px solid #42E926;
+  background-color: rgb(66, 233, 38);
 }
 
 .html5 {
-  background-color: #fff;
-  border: 2px solid #05D05D;
+  background-color: rgb(232, 224, 41);
 }
 .langc {
-  background-color: #fff;
-  border: 2px solid #05D05D;
+  background-color: rgb(5, 208, 93);
 }
 .css3 {
-  background-color: #fff;
-  border: 2px solid #800B39;
+  background-color: rgb(128, 11, 57);
 }
 
 
