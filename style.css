@@ -60,7 +60,7 @@ h1, p {
 }
 .twitter:hover {
   transform:rotate(360deg);
-  transition:5s;
+  transition:3s;
   background-image: url("images/twitter_gray.png");
 }
 .mail {
@@ -70,7 +70,7 @@ h1, p {
 }
 .mail:hover {
   transform:rotate(360deg);
-  transition:5s;
+  transition:3s;
   background-image: url("images/mail_white.png");
 }
 .github {
@@ -80,7 +80,7 @@ h1, p {
 }
 .github:hover{
   transform:rotate(360deg);
-  transition:5s;
+  transition:3s;
   background-image: url("images/github_gray.png");
 }
 .linkedin {
@@ -91,7 +91,7 @@ h1, p {
 }
 .linkedin:hover {
   transform:rotate(360deg);
-  transition:5s;
+  transition:3s;
   background-image: url("images/linkedin_gray.png");
 }
 .comp {
