@@ -21,6 +21,18 @@
   font-size: 1.2em;
 }
 
+.cadre_img {
+  width: 252px;
+  height: 402px;
+  border-radius: 10px;
+  margin-left:1px;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+}
+
 img {
   display: block;
   margin: auto;
@@ -84,7 +96,7 @@ h1, p {
   background-image: url("images/github_gray.png");
 }
 .linkedin {
-  
+
   width: 64px;
   height: 64px;
   background-image: url("images/linkedin_blue.png");
